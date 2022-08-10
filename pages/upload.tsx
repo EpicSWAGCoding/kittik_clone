@@ -43,10 +43,11 @@ const Upload = () => {
           setVideoAsset(data);
           setLoading(false);
         });
-    } else {
-      setLoading(false);
-      setWrongFileType(true);
     }
+    // else {
+    //   setLoading(false);
+    //   setWrongFileType(true);
+    // }
   };
 
   const handlePost = async () => {
@@ -151,11 +152,11 @@ const Upload = () => {
               </div>
             )}
           </div>
-          {wrongFileType && (
+          {/* {wrongFileType && (
             <p className='text-center text-xl text-red-400 font-semibold mt-4 w-[260px]'>
               Please select any video file (mp4 or webm or ogg of mov or m4v)
             </p>
-          )}
+          )} */}
         </div>
         <div className='flex flex-col gap-3 pb-10'>
           <label className='text-md font-medium '>Caption</label>
