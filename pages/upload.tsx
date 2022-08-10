@@ -45,7 +45,7 @@ const Upload = () => {
         });
     } else {
       setLoading(false);
-      setWrongFileType(false);
+      setWrongFileType(true);
     }
   };
 
