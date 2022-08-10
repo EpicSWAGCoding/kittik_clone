@@ -27,7 +27,7 @@ const Upload = () => {
 
   const uploadVideo = async (e: any) => {
     const selectedFile = e.target.files[0];
-    const fileTypes = ['video/mp4', 'video/webm', 'video/ogg'];
+    const fileTypes = ['video/mp4', 'video/webm', 'video/ogg', 'video/mov'];
 
     // uploading asset to sanity
     if (fileTypes.includes(selectedFile.type)) {
@@ -112,7 +112,7 @@ const Upload = () => {
                       </div>
 
                       <p className='text-gray-400 text-center mt-10 text-sm leading-10'>
-                        MP4 or WebM or ogg <br />
+                        MP4 or WebM or ogg or mov <br />
                         720x1280 resolution or higher <br />
                         Up to 10 minutes <br />
                         Less than 2 GB
