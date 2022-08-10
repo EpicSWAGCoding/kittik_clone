@@ -112,7 +112,7 @@ const Upload = () => {
                       </div>
 
                       <p className='text-gray-400 text-center mt-10 text-sm leading-10'>
-                        MP4 or WebM or ogg or mov <br />
+                        MP4 or WebM or ogg or mov or m4v <br />
                         720x1280 resolution or higher <br />
                         Up to 10 minutes <br />
                         Less than 2 GB
@@ -153,7 +153,7 @@ const Upload = () => {
           </div>
           {wrongFileType && (
             <p className='text-center text-xl text-red-400 font-semibold mt-4 w-[260px]'>
-              Please select any video file (mp4 or webm or ogg)
+              Please select any video file (mp4 or webm or ogg of mov or m4v)
             </p>
           )}
         </div>
